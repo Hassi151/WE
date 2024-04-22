@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./WE.css">
+</head>
+<body>
+    <form action="#" method="post" autocomplete="on">
+        <h2>Customer Info</h2>
+
+        <!-- Name Field with Autofocus, Placeholder, Required -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+        <br><br>
+
+        <!-- Telephone Field with Placeholder, Pattern, Required -->
+        <label for="phone">Telephone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <br><br>
+
+        <!-- Email Field with Placeholder, Allowing Multiple Entries, Required -->
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" multiple required>
+        <br><br>
+
+        <h2>Books</h2>
+
+        <!-- Books Field with Data List -->
+        <label for="books">Select a book:</label>
+        <input type="text" id="books" name="books" list="book-list" placeholder="Choose a book">
+        <datalist id="book-list">
+            <option value="Book A">
+            <option value="Book B">
+            <option value="Book C">
+            <option value="Book D">
+            <option value="Book E">
+        </datalist>
+        <br><br>
+
+        <!-- Quantity Field with Min/Max -->
+        <label for="quantity">Quantity (Maximum 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5" value="1">
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
